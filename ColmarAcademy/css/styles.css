@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+/* Font Size and Color guide from Colmar Academy */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #989898;
+  margin-left: 24px;
+}
+
+/* Common Styles */
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #4f4f4f;
+}
+.startHere {
+  color: #515151;
+}
+.readMore {
+  color: #4577bc;
+}
+header {
+  display: flex;
+  width: 100%;
+  /* Spec: 64px for heading height */
+  height: 64px;
+  /* Spec: 24px for left padding */
+  padding: 0 0 0 24px;
+  align-items: center;
+  color: #989898;
+}
+/* Spec: Font in darker grey */
+.colmar {
+  color: #01161e;
+  /* Spec: Font in lighter grey */
+}
+.academy {
+  color: #9f9b9b;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+nav a {
+  /* Spec: padding left and right 16px */
+  padding: 0px 8px;
+  color: #989898;
+  /* Spec: No underline for navigation */
+  text-decoration: none;
+  /* Spec: Padding right 24px for navigation */
+  padding: 0 24px 0 0;
+}
+.container {
+    padding: 32 24 32 24;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* flex-direction: column; */
+    background-color: #9f9b9b;
+    border: red;
+}
+   
+.container img {
+    /* width: 100%; */
+    height: auto;
+    padding: 32px 16px 16px 24px;
+        
+    }
+.section60 img{
+    /* padding: 32 24 32 24; */
+    /* border: red solid 2px; */
+    width: 100%;
+    
+}
+.width60 {
+    width: 60%;
+}
+.section40 {
+    /* display: flex; */
+   /* justify-content: center; */
+   border:  red;
+   text-align: left;
+   align-items: center;
+   
+}
+.section40 h1 {
+
+    /* Spec: Padding bottom 16px */
+    padding-bottom: 16px;
+}
+.section40 {
+    height: auto;
+}
+.startHere {
+    background-color: #01161e ;
+    /* Spec: Button width 60% */
+    width: 60%;
+    /* Spec: Padding top 8px */
+    padding-top: 8px;
+    text-align: center;
+}
+.nobg {
+    background-color: white;
+}
+.section60 h2 {
+    /* Spec: Bottom margin 24px */
+    margin-bottom: 24px ;
+}
+/* .orientationImg {
+    width: 35%;
+} */
+.orientationDetails {
+    display: flex;
+    border: red;
+    align-items: center;
+    outline: none;
+    margin-right: 24px;
+    
+}
+button {
+    outline: none;
+    background-color: white;
+    color: blue;
+}
+.guest {
+    background-color: #989898;
+}
+.startlearn {
+    background-color: #989898;
+    padding: 32px 72px;
+}
+.startlearn h2 {
+    /* Spec: Top Bottom margin 32px */
+    margin: 32px;
+    text-align: center;
+}   
+    .learningDetail {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-content: space-around;
+     
+     
+    
+
+        
+    }
+.learningDetail div {
+    background-color: white;
+}
+.learningDetail h4 {
+    margin-left: 16px;
+}
+.learningDetail p {
+    margin: 0 0 16px 16px;
+}
+/* .thesis {
+    display: flex;
+} */
+.thesisDetail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.thesis h2 {
+    text-align: center;
+    padding: 32px;
+}
+.thesisExhibit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* media query here  */
+@media screen and (max-width: 720px) {
+.container {
+    flex-direction: column;
+}
+.section60 {
+    flex-direction: column;
+}
+.section40 {
+    flex-direction: column;
+}
+.orientationDetails {
+    flex-direction: column;
+}
+header {
+    display: none;
+}
+}
+
+/* *************************************** */
+
+
+footer {
+  text-align: left;
+  padding-left: 20px;
+}
